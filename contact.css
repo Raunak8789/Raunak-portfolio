@@ -1,0 +1,168 @@
+/* General styles */
+body {
+    background-color: white; /* Set background color to white */
+    color: #ffffff; /* White text color */
+    font-family: Arial, sans-serif;
+    background-image: url('/images/image.portfolio.avif'); /* Background image */
+    background-size: cover; /* Cover entire background */
+    background-attachment: fixed; /* Fixed background */
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background-color: rgba(0, 31, 63, 0.9); /* Semi-transparent darker blue for navbar */
+    padding: 10px 20px; /* Adjust padding for better spacing */
+    position: fixed; /* Fix navbar at the top */
+    top: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure navbar is on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+#navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding:10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbar ul li:last-child {
+    margin-right: 40px; /* Extra space on the right side for the last item */
+}
+
+#navbar ul li {
+    display: inline-block; /* Display links horizontally with block properties */
+    margin: 0 2px; /* Space between links */
+    position: relative; /* Position relative for hover effects */
+}
+
+#navbar ul li a {
+    color: #ffffff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold text */
+    padding: 10px 20px; /* Increased padding for more space around the text */
+    border-radius: 20px; /* Large border radius for an oval shape */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+#navbar ul li a:hover {
+    background-color:  grey; /* Bright red background on hover */
+    color: #ffffff; /* White text color on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+
+/* Section styles */
+section {
+    padding: 60px 20px; /* Reduce padding to make content fit without scrolling */
+    margin-top: 50px; /* Additional margin to prevent overlap with the navbar */
+}
+
+section h2 {
+    color: #FFDD57; /* Light yellow for headings */
+    border-bottom: 2px solid #ffffff; /* Underline effect for headings */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+section p {
+    color: #ffffff; /* White text color for paragraphs */
+}
+
+/* Contact Information styles */
+#contact-info {
+    max-width: 600px; /* Control the width of the section */
+    margin: 20px; /* Center with auto margin */
+    padding: 10px; /* Reduce padding for a more compact look */
+    margin-top: 40px; /* Add space above the contact information */
+    border-radius: 10px; /* Rounded corners */
+    color: #ffffff; /* White text color */
+}
+
+/* Social Media Icons styles */
+.social-icons {
+    margin-top: 10px; /* Space above social icons */
+    display: flex; /* Display icons in a row */
+    justify-content: start; /* Align icons to the start */
+    gap: 15px; /* Space between icons */
+}
+
+.social-icons a {
+    background-color:whitesmoke; /* Dark blue background for icons */
+    padding: 5px; /* Reduce padding inside the icon */
+    border-radius: 50%; /* Circular background */
+    display: inline-block; /* Make the anchor an inline block */
+}
+
+.social-icons img {
+    width: 25px; /* Set a smaller width for the icons */
+    height: 25px; /* Set a smaller height for the icons */
+    opacity: 0.7; /* Slight transparency to blend with background */
+    transition: opacity 0.3s; /* Smooth transition on hover */
+}
+
+.social-icons img:hover {
+    opacity: 1; /* Full opacity on hover */
+}
+
+/* Contact Form styles */
+#contact-form {
+    max-width: 600px; /* Set a max width for the form */
+    margin: 30px auto; /* Center the form on the page */
+    padding: 10px; /* Reduce padding inside the form container */
+    text-align: center; /* Center-align text within the form */
+    background-color: grey; /* Light background color for form */
+    border-radius: 10px; /* Rounded corners for the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#contact-form h2 {
+    color: #FFDD57; /* Light yellow for headings */
+    border-bottom: 2px solid #ffffff; /* Underline effect for headings */
+    padding-bottom: 10px;
+    margin-bottom: 15px; /* Reduce space below the heading */
+}
+
+#contact-form form {
+    display: flex; /* Flexbox for form elements */
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: center; /* Center align items */
+}
+
+#contact-form label, 
+#contact-form input, 
+#contact-form textarea, 
+#contact-form button {
+    width: 100%; /* Full width for form elements */
+    max-width: 500px; /* Max width to prevent stretching */
+    margin-bottom: 10px; /* Reduce space between form elements */
+}
+
+#contact-form input, 
+#contact-form textarea {
+    padding: 8px; /* Reduce padding inside input fields */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners for input fields */
+    font-size: 14px; /* Reduce font size */
+}
+
+#contact-form textarea {
+    height: 80px; /* Reduce the height of the textarea */
+}
+
+#contact-form button {
+    background-color: #001f3f; /* Dark blue background */
+    color: white; /* White text */
+    padding: 8px 16px; /* Reduce padding for the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px; /* Reduce font size */
+}
+
+#contact-form button:hover {
+    background-color: navy; /* Navy color on hover */
+}

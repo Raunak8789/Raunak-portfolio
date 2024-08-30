@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Raunak Singh</title>
+    <link rel="stylesheet" href="/contact.css">
+    <script>
+        // JavaScript to detect mobile devices
+        function detectMobileDevice() {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Check if the user agent matches common mobile devices
+            if (/android/i.test(userAgent) || 
+                /iPhone|iPad|iPod/i.test(userAgent) || 
+                /opera mini/i.test(userAgent) || 
+                /IEMobile/i.test(userAgent)) {
+                // If a mobile device is detected
+                document.body.innerHTML = "<h1 style='text-align: center; margin-top: 20%; font-size: 2em;'>This site can only be viewed on a desktop.</h1>";
+                document.body.style.backgroundColor = "#ffffff"; // Optional: change background color for clarity
+            }
+        }
+
+        // Run the function when the page loads
+        window.onload = detectMobileDevice;
+    </script>
+</head>
+<body>
+    <div id="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/education">Education</a></li>
+            <li><a href="/experience">Experience</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/skills">Skills and Achievements</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+    
+    <section id="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: raunaksingh6891@gmail.com</p>
+        <p>Phone: +91 8789264646</p>
+        <h3>Connect with me on:</h3>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/raunaksingh9712/?hl=en" target="_blank">
+                <img src="/images/insta.svg" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/raunak-singh-3344b0223/" target="_blank">
+                <img src="/images/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/Raunak8789" target="_blank">
+                <img src="/images/git.png" alt="GitHub">
+            </a>
+        </div>
+    </section>
+
+    <section id="contact-form">
+        <h2>Send me a message</h2>
+        <form action="/send-email" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>

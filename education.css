@@ -1,0 +1,69 @@
+body {
+    background-color: white;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    background-image: url('/images/image.portfolio.avif');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+#navbar {
+    background-color: rgba(0, 31, 63, 0.9); /* Semi-transparent darker blue for navbar */
+    padding: 10px 20px; /* Adjust padding for better spacing */
+    position: fixed; /* Fix navbar at the top */
+    top: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure navbar is on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+#navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding:10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbar ul li:last-child {
+    margin-right: 40px; /* Extra space on the right side for the last item */
+}
+
+#navbar ul li {
+    display: inline-block; /* Display links horizontally with block properties */
+    margin: 0 2px; /* Space between links */
+    position: relative; /* Position relative for hover effects */
+}
+
+#navbar ul li a {
+    color: #ffffff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold text */
+    padding: 10px 20px; /* Increased padding for more space around the text */
+    border-radius: 20px; /* Large border radius for an oval shape */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+#navbar ul li a:hover {
+    background-color:  grey; /* Bright red background on hover */
+    color: #ffffff; /* White text color on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+section {
+    padding: 80px 20px;
+    margin-top: 10px;
+}
+
+section h2 {
+    color: #FFDD57;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+section p, section ul {
+    color: #ffffff;
+}

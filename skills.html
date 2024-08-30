@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills and Achievements - Raunak Singh</title>
+    <link rel="stylesheet" href="/skills.css">
+    <script>
+        // JavaScript to detect mobile devices
+        function detectMobileDevice() {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Check if the user agent matches common mobile devices
+            if (/android/i.test(userAgent) || 
+                /iPhone|iPad|iPod/i.test(userAgent) || 
+                /opera mini/i.test(userAgent) || 
+                /IEMobile/i.test(userAgent)) {
+                // If a mobile device is detected
+                document.body.innerHTML = "<h1 style='text-align: center; margin-top: 20%; font-size: 2em;'>This site can only be viewed on a desktop.</h1>";
+                document.body.style.backgroundColor = "#ffffff"; // Optional: change background color for clarity
+            }
+        }
+
+        // Run the function when the page loads
+        window.onload = detectMobileDevice;
+    </script>
+</head>
+<body>
+    <div id="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/education">Education</a></li>
+            <li><a href="/experience">Experience</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/skills">Skills and Achievements</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><b>Languages:</b> C++, Python, Java, JavaScript</li><br>
+            <li><b>Frontend:</b> React, HTML, CSS</li><br>
+            <li><b>Backend:</b> Node.js, Express.js,Flask</li><br>
+            <li><b>Clouds & Databases:</b> AWS,MySql</li><br>
+            <li><b>Developer Tools:</b> VS Code, Emacs, GitHub,Jira</li>
+        </ul>
+
+        <h2>Certificates</h2>
+        <ul>
+            <li>Training in Data Science Mood Indigo IIT Bombay.</li><br>
+            <li>Sparkathon conducted by Walmart.</li><br>
+            <li>AWS Educate Introduction to Cloud 101.</li><br>
+            <li>Published Paper in ComSIA-2024 in Elsevier SSRN series.</li>
+        </ul>
+        <h2>Achievements</h2>
+        <ul>
+            <li>5th rank overall in college on Gfg,solved more than 300 problems.</li><br>
+            <li>9 badges on leetcode,solved more than 300 problems with 100+ days of streak.</li><br>
+            <li>Recieved Prof. MRD Merit Scholarship in 5th sem and recived Distinction award for 5 times.</li><br>
+            <li>Problem statement got selected for Ingenious hackathon 2022.</li><br>
+            <li>Went onto 2nd round of Sparkathon conducted by Walmart.</li><br>
+            <li>Got selected into college cricket team.</li>
+        </ul>
+        <h2>Interests</h2>
+        <ul>
+            <li>Cricket, Singing, Poetry, Exercise</li>
+        </ul>
+    </section>
+</body>
+</html>

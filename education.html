@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Raunak Singh</title>
+    <link rel="stylesheet" href="/education.css">
+    <script>
+        // JavaScript to detect mobile devices
+        function detectMobileDevice() {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Check if the user agent matches common mobile devices
+            if (/android/i.test(userAgent) || 
+                /iPhone|iPad|iPod/i.test(userAgent) || 
+                /opera mini/i.test(userAgent) || 
+                /IEMobile/i.test(userAgent)) {
+                // If a mobile device is detected
+                document.body.innerHTML = "<h1 style='text-align: center; margin-top: 20%; font-size: 2em;'>This site can only be viewed on a desktop.</h1>";
+                document.body.style.backgroundColor = "#ffffff"; // Optional: change background color for clarity
+            }
+        }
+
+        // Run the function when the page loads
+        window.onload = detectMobileDevice;
+    </script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div id="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/education">Education</a></li>
+            <li><a href="/experience">Experience</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/skills">Skills and Achievements</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+    
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <h3>Graduation - PES University, Bengaluru, Karnataka, India (2020-2024)</h3>
+        <ul>
+            <li>B.Tech in Computer Science and Engineering</li>
+            <li>CGPA: 8.78</li>
+        </ul>
+        <br><br>
+        <h3>12th Boards - Digdarshan Public School, Patna, Bihar, India (2018-2019)</h3>
+        <ul>
+            <li>PCM</li>
+            <li>Score: 88.2%</li>
+        </ul>
+        <br><br>
+        <h3>10th Boards - Gyan Niketan, Patna, Bihar, India (2016-2017)</h3>
+        <ul>
+            <li>CGPA: 10</li>
+        </ul>
+    </section>
+</body>
+</html>
